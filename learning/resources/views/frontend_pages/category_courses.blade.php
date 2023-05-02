@@ -75,7 +75,7 @@
                                         <div class="d-md-flex">
                                             <div class="item-card9-img">
                                                 <div class="item-card9-imgs">
-                                                    <a href="page-details.html"></a>
+                                                    <a href="{{route('course.details',$item->slug)}}"></a>
                                                     <img src="{{asset($item->image)}}" alt="img"
                                                         class="cover-image">
                                                 </div>
@@ -88,16 +88,16 @@
                                                 </div>
                                                 <div class="item-overly-trans">
                                                   @if($item->offline_or_online ==0)
-                                                  <a href="page-details.html" class="bg-primary">Offline</a>
+                                                  <a href="#" class="bg-primary">Offline</a>
                                                   @else
-                                                  <a href="page-details.html" class="bg-primary">Online</a>
+                                                  <a href="#" class="bg-primary">Online</a>
                                                   @endif
                                                 </div>
                                             </div>
                                             <div class="card border-0 mb-0">
                                                 <div class="card-body ">
                                                     <div class="item-card9">
-                                                        <a href="page-details.html" class="text-dark">
+                                                        <a href="{{route('course.details',$item->slug)}}" class="text-dark">
                                                             <h3 class="font-weight-semibold mt-1">{{$item->title}}</h3>
                                                         </a>
                                                         <div class="mt-2 mb-2">
@@ -144,7 +144,7 @@
                                                 <div class="card overflow-hidden">
                                                     <div class="item-card9-img">
                                                         <div class="item-card9-imgs">
-                                                            <a href="page-details.html"></a>
+                                                            <a href="{{route('course.details',$item->slug)}}"></a>
                                                             <img src="{{asset($item->image)}}" alt="img"
                                                                 class="cover-image">
                                                         </div>
@@ -158,9 +158,9 @@
                                                         </div>
                                                         <div class="item-overly-trans">
                                                                 @if($item->offline_or_online ==0)
-                                                                <a href="page-details.html" class="bg-primary">Offline</a>
+                                                                <a href="#" class="bg-primary">Offline</a>
                                                                 @else
-                                                                <a href="page-details.html" class="bg-primary">Online</a>
+                                                                <a href="#" class="bg-primary">Online</a>
                                                                 @endif
                                                         </div>
                                                     </div>
@@ -168,7 +168,7 @@
                                                         <div class="item-card9">
                                                             <span class="item-card-badge"><i class="fa fa-tag me-1"></i>
                                                                 Business</span>
-                                                            <a href="page-details.html" class="text-dark mt-2">
+                                                            <a href="{{route('course.details',$item->slug)}}" class="text-dark mt-2">
                                                                 <h3 class="font-weight-semibold mt-2 mb-2" style="height:100px">{{$item->title}}</h3>
                                                             </a>
                                                             <div class="item-card9-desc mb-2" style="height:20px">
